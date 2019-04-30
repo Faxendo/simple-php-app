@@ -3,10 +3,8 @@ version: "2"
 services:
   app:
     build: .
-    environment:
-      DATABASE: training42
-      DBUSER: duoquadra
-      DBPASSWORD: crimson42
+    env_file:
+      - ./vars.env
     ports:
       - 8080:80
 volumes:
