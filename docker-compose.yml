@@ -4,7 +4,7 @@ services:
   app:
     build: .
     env_file:
-      - ./vars.env
+      - ../vars.env
     ports:
       - 8080:80
 volumes:
